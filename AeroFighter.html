@@ -1,0 +1,67 @@
+  <!DOCTYPE html>
+  <head>
+  
+  <title>AeroFighter</title>
+  <link href="CSS/Css_AeroFighter.css" rel="stylesheet" type="text/css">
+  
+  </head>
+  
+  <body>
+  <h1 align="center">AeroFighter</h1>
+  
+  <div id="plane">
+  <div id="fplane"><img src="Pictures/planes-198a.jpg" width="100px" height="75px" /></div>
+  <div id="rocket"><img src="Pictures/firing.png" width="50px" height="30px" /></div>
+  </div>
+  
+  <input type="button" value="Start" onclick="moveRight();" />
+  
+  <div id="buttons">
+  <img id="up" onClick="moveup()" src="Pictures/up.png" width="50px" height="50px"  />
+  <img id="down" onClick="movedown()" src="Pictures/down.jpg" width="50px" height="50px" />
+  </div>
+  
+  <script type="text/javascript">
+  <!--
+  
+  var imgObj = null;
+              var animate ;
+              
+              function init(){
+                 imgObj = document.getElementById('rocket');
+                 imgObj.style.position= 'relative';
+                 imgObj.style.right = '0px'
+             
+              }
+              
+              function moveRight(){
+                 imgObj.style.right = parseInt(imgObj.style.right) + 5 + 'px';
+                 animate = setTimeout(moveRight,20); 
+                 
+                 if (parseInt(imgObj.style.left) < 1 ){
+                     clearTimeout(animate);
+                     imgObj.style.visibility = 'NULL'
+                     }
+                 
+              }
+              
+              window.onload =init;
+  
+  function moveup(){
+      var image = document.getElementById('fplane');
+      image.style.position = 'relative'
+      image.style.top = parseInt(image.style.top) - 10 + 'px';
+      }
+      
+  function movedown(){
+      var image = document.getElementById('fplane');
+      image.style.position = 'relative'
+      image.style.top = parseInt(image.style.top) + 10 + 'px';
+      }
+  
+  -->
+  </script>
+  
+  
+  </body>
+  </html>

@@ -1,0 +1,28 @@
+
+@-webkit-keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+#plane	{ 
+	width: 800px; 
+	height: 500px; 
+	position:relative;
+	left: 200px;
+	background-image: url(../Pictures/bkg_plane.jpg);
+	background-position: 0px 0px;
+	background-repeat: repeat-x;
+
+	animation: animatedBackground 40s linear infinite;
+}
+
+#rocket {
+	position:relative;
+	top:30%;
+	left:90%;
+	}
+
+#fplane	{  
+	position:relative;
+	top:45%;
+	left:5%;
+}
